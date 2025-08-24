@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className='shadow py-4'>
       <div className='container px-4 2xl:px-20 mx-auto flex justify-between items-center'>
         {/* Logo */}
-        <img onClick={()=>navigate('/')} className='cursor-pointer h-10' src={assets.logo} alt="Job Portal Logo" />
+        <img onClick={()=>navigate('/')} className='cursor-pointer h-20' src={assets.logo} alt="HireUNex Logo" />
 
         {/* Conditional Rendering */}
         {

@@ -8,6 +8,7 @@ Sentry.init({
     nodeProfilingIntegration(),
     Sentry.mongooseIntegration()
   ],
+  
   // tracesSampleRate: 1.0, // Capture 100% of transactions
 });
 
@@ -20,6 +21,6 @@ Sentry.startSpan({
 }, () => {
   // The code executing inside this transaction will be wrapped in a span and profiled
 });
-
+// Sentry.captureMessage("Hello Sentry! Test message from HireUNex project");
 // Calls to stopProfiler are optional – if not stopped, it will keep profiling
 Sentry.profiler.stopProfiler();
